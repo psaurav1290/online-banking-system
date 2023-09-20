@@ -57,9 +57,9 @@ public class CustomerService {
 		return result;
 	}
 
-	public List<Account> fetchAccounts(String username) throws NoDataFoundException {
+	public List<Account> fetchAccounts(String username) throws ResourceNotFoundException {
 		if (accRepo.findByUsername(username).isEmpty()) {
-			throw new NoDataFoundException("No Data to Display");
+			throw new ResourceNotFoundException("No Data to Display");
 		}
 		return accRepo.findByUsername(username);
 	}
