@@ -1,4 +1,4 @@
-package com.bank.Banking.controller;
+package com.banking.bank.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
-import com.bank.Banking.model.Account;
-import com.bank.Banking.model.Customer;
-import com.bank.Banking.model.LoginModel;
-import com.bank.Banking.service.CustomerService;
-import com.bank.Banking.exceptions.NoDataFoundException;
-import com.bank.Banking.exceptions.ResourceNotFoundException;
+import com.banking.bank.model.Account;
+import com.banking.bank.model.Customer;
+import com.banking.bank.model.LoginModel;
+import com.banking.bank.service.CustomerService;
+import com.banking.bank.exceptions.NoDataFoundException;
+import com.banking.bank.exceptions.ResourceNotFoundException;
 
 @RestController
 @CrossOrigin("*")
