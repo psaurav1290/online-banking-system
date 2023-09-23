@@ -13,7 +13,6 @@ import com.banking.bank.model.LoginModel;
 import com.banking.bank.exceptions.NoDataFoundException;
 import com.banking.bank.exceptions.ResourceNotFoundException;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -57,9 +56,9 @@ public class CustomerService {
 		return result;
 	}
 
-	public List<Account> fetchAccounts(String username) throws ResourceNotFoundException {
+	public List<Account> fetchAccounts(String username) throws NoDataFoundException {
 		if (accRepo.findByUsername(username).isEmpty()) {
-			throw new ResourceNotFoundException("No Data to Display");
+			throw new NoDataFoundException("No Data to Display");
 		}
 		return accRepo.findByUsername(username);
 	}
