@@ -4,8 +4,6 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import java.util.ArrayList;
-import java.util.List;
 
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
@@ -16,6 +14,7 @@ import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+
 //import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -26,26 +25,29 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultMatcher;
 
-import com.bank.Banking.dao.AccRepository;
-import com.bank.Banking.dao.AdminRepository;
-import com.bank.Banking.dao.CustomerRepository;
-import com.bank.Banking.dao.TransactionRepository;
-import com.bank.Banking.model.Account;
-import com.bank.Banking.model.AccountStatement;
-import com.bank.Banking.model.Admin;
-import com.bank.Banking.model.Customer;
-import com.bank.Banking.model.LoginModel;
-import com.bank.Banking.model.Transaction;
-import com.bank.Banking.service.AccountService;
-import com.bank.Banking.service.AdminService;
-import com.bank.Banking.service.CustomerService;
-import com.bank.Banking.service.TransactionService;
+import com.banking.bank.dao.AccRepository;
+import com.banking.bank.dao.AdminRepository;
+import com.banking.bank.dao.CustomerRepository;
+import com.banking.bank.dao.TransactionRepository;
+import com.banking.bank.model.Account;
+import com.banking.bank.model.AccountStatement;
+import com.banking.bank.model.Admin;
+import com.banking.bank.model.Customer;
+import com.banking.bank.model.LoginModel;
+import com.banking.bank.model.Transaction;
+import com.banking.bank.service.AccountService;
+import com.banking.bank.service.AdminService;
+import com.banking.bank.service.CustomerService;
+import com.banking.bank.service.TransactionService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @ComponentScan(basePackages="com")
-//@SpringBootTest//(classes= { com.bank.Banking.AdminControllerTest.class})//, com.bank.Banking.UserControllerTest.class})
-//@SpringBootTest(classes=com.bank.Banking.UserControllerTest.class)
+//@SpringBootTest//(classes= { com.banking.bank.AdminControllerTest.class})//, com.banking.bank.UserControllerTest.class})
+//@SpringBootTest(classes=com.banking.bank.UserControllerTest.class)
 
 //
 //@RunWith(SpringRunner.class)
@@ -58,7 +60,6 @@ class BankApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-	
 	
 	@Autowired
 	private MockMvc mvc;
@@ -466,6 +467,4 @@ class BankApplicationTests {
 	
 	}
 	
-
-
 }
