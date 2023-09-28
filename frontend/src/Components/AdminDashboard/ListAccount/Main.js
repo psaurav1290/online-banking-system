@@ -23,7 +23,7 @@ const Main = () => {
     const [tdata, setTdata] = useState([]);
     const [searchQuery, setSearchQuery] = useState("");
     const [filteredData, setFilteredData] = useState([]);
-    const baseURL = "http://localhost:9080";
+    const baseURL = "http://localhost:8080";
     const userid = sessionStorage.getItem("userID");
     const windowWidth = WinWidthContext();
 

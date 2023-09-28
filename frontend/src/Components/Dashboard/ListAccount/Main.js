@@ -29,7 +29,7 @@ const Main = () => {
     const [tdata, setTdata] = useState([]);
     const [tlength, setTlength] = useState(0);
     const userId = sessionStorage.getItem("userID");
-    const baseURL = "http://localhost:9080";
+    const baseURL = "http://localhost:8080";
     const windowWidth = WinWidthContext();
     const navigate = useNavigate();
     useEffect(() => {
