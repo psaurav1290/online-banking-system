@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { GlobalStyles } from "../styles/global";
 import { useNavigate } from "react-router-dom";
-import AdminSidebar from "../Components/AdminSideBar/AdminSidebar";
+import AdminSidebar from "../Components/AdminSideBar/AdminSideBar";
 
 const Layout = ({ children }) => {
     const userId = sessionStorage.getItem("userID");
