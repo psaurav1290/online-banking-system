@@ -5,7 +5,7 @@ import styled from "styled-components";
 import ListTransaction from "./ListTransaction/ListTransaction";
 
 const Main = () => {
-    const baseURL = "http://localhost:9080";
+    const baseURL = "http://localhost:8080";
     const { accno } = useParams();
     const userId = sessionStorage.getItem("userID");
     const [tdata, setTdata] = useState([]);

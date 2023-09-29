@@ -20,10 +20,10 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 
-import com.bank.Banking.dao.CustomerRepository;
-import com.bank.Banking.model.Account;
-import com.bank.Banking.model.Customer;
-import com.bank.Banking.service.CustomerService;
+import com.banking.bank.dao.CustomerRepository;
+import com.banking.bank.model.Account;
+import com.banking.bank.model.Customer;
+import com.banking.bank.service.CustomerService;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
@@ -31,7 +31,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 @RunWith(SpringRunner.class)
 @WebMvcTest
 
-public class CustomertControllerTest {
+public class CustomerControllerTest {
 
     @Autowired
     private MockMvc mvc;

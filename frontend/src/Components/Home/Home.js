@@ -5,7 +5,7 @@ import axios from "axios";
 import WinWidthContext from "../../context/WinWidthContext";
 
 const Home = () => {
-    const baseURL = "http://localhost:9080";
+    const baseURL = "http://localhost:8080";
     const userId = sessionStorage.getItem("userID");
     const [user, setUser] = useState({});
     const windowWidth = WinWidthContext();

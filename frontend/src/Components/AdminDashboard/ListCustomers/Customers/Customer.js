@@ -1,8 +1,5 @@
-import React, { useContext } from "react";
+import React from "react";
 import styled from "styled-components";
-import { ActiveContext } from "../Main";
-import { useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
 
 const Container = styled.div`
     display: flex;
@@ -27,11 +24,6 @@ const Text = styled.h1`
     margin: 0;
 `;
 
-const Subtitle = styled(Text)`
-    font-size: 0.6rem;
-    color: #b2bfe1;
-    margin-top: 2px;
-`;
 
 const AccountNo = styled.div`
     width: 30%;
@@ -45,15 +37,7 @@ const PropertyText = styled.div`
     margin-left: 1rem;
 `;
 
-const AccountTypeImg = styled.img`
-    height: 30px;
-    width: 30px;
-`;
 
-const Redirect = styled.img`
-    height: 15px;
-    width: 15px;
-`;
 const PropertyStreet = styled(Text)`
     font-size: 0.8rem;
 `;
@@ -63,25 +47,8 @@ const DateOpened = styled(Text)`
 const Balance = styled(Text)`
     width: 25%;
 `;
-const Branch = styled.div`
-    width: 17%;
-`;
-const Status = styled.div`
-    display: flex;
-    align-items: center;
-`;
-const StatusIndicator = styled.div`
-    width: 15px;
-    height: 15px;
-    border-radius: 10px;
-    background-color: ${(props) => props.color};
-    margin-left: 1rem;
-    position: absolute;
-    right: 7rem;
-`;
 
 const Customer = ({ data }) => {
-    const activeContext = useContext(ActiveContext);
 
     return (
         <Container>

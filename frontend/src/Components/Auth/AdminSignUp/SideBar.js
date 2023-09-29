@@ -7,7 +7,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 const Sidebar = () => {
-    const baseURL = "http://localhost:9080/saveAdmin";
+    const baseURL = "http://localhost:8080/saveAdmin";
     const navigate = useNavigate();
     const [user, setUser] = useState({
         userid: "",

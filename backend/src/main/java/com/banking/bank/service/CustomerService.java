@@ -73,7 +73,7 @@ public class CustomerService {
 		if (cust == null)
 			result = "Invalid customer";
 		else {
-			if (otp.equals("111111")) {
+			if (otp.equals("123456")) {
 				cust.setPassword(u.getPassword());
 				custRepo.save(cust);
 				result = "Success!";
