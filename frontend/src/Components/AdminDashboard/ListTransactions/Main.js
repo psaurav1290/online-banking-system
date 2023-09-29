@@ -23,7 +23,7 @@ const Main = () => {
     const [selectedAccount, setSelectedAccount] = useState(null);
     const [data, setData] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
-    const baseURL = "http://localhost:9080";
+    const baseURL = "http://localhost:8080";
     const userid = sessionStorage.getItem("userID");
 
     useEffect(() => {

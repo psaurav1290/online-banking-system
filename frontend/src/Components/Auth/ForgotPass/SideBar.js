@@ -7,7 +7,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 const Sidebar = () => {
-    const baseURL = "http://localhost:9080/changePassword";
+    const baseURL = "http://localhost:8080/changePassword";
     const navigate = useNavigate();
     const [user, setUser] = useState({
         userId: "",
